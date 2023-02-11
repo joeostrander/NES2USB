@@ -1,0 +1,557 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1455 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"45 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Main.c
+[v _ISRCode ISRCode `II(v  1 e 1 0 ]
+"50
+[v _InitializeSystem InitializeSystem `(v  1 s 1 InitializeSystem ]
+"61
+[v _EnableInterrupts EnableInterrupts `(v  1 s 1 EnableInterrupts ]
+"69
+[v _PrepareTxBuffer PrepareTxBuffer `(v  1 e 1 0 ]
+"114
+[v _ProcessIncomingData ProcessIncomingData `(v  1 e 1 0 ]
+"120
+[v _CheckUsb CheckUsb `(v  1 s 1 CheckUsb ]
+"129
+[v _ProcessIO ProcessIO `(v  1 e 1 0 ]
+"146
+[v _main main `(v  1 e 1 0 ]
+"41 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/nes_gamepad.c
+[v _NES_GPIO_Initialize NES_GPIO_Initialize `(v  1 e 1 0 ]
+"52
+[v _NES_read_pad NES_read_pad `(uc  1 e 1 0 ]
+"186 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Usb.c
+[v _IsUsbDataAvaialble IsUsbDataAvaialble `(uc  1 e 1 0 ]
+"196
+[v _ReArmInterface ReArmInterface `(v  1 e 1 0 ]
+"216
+[v _HIDSend HIDSend `(v  1 e 1 0 ]
+"233
+[v _HIDInitEndpoints HIDInitEndpoints `(v  1 e 1 0 ]
+"258
+[v _ProcessHIDRequest ProcessHIDRequest `(v  1 e 1 0 ]
+"343
+[v _GetDescriptor GetDescriptor `(v  1 s 1 GetDescriptor ]
+"382
+[v _GetStatus GetStatus `(v  1 s 1 GetStatus ]
+"429
+[v _SetFeature SetFeature `(v  1 s 1 SetFeature ]
+"475
+[v _ProcessStandardRequest ProcessStandardRequest `(v  1 e 1 0 ]
+"563
+[v _InDataStage InDataStage `(v  1 e 1 0 ]
+"592
+[v _OutDataStage OutDataStage `(v  1 e 1 0 ]
+"612
+[v _SetupStage SetupStage `(v  1 e 1 0 ]
+"680
+[v _WaitForSetupStage WaitForSetupStage `(v  1 e 1 0 ]
+"693
+[v _ProcessControlTransfer ProcessControlTransfer `(v  1 e 1 0 ]
+"753
+[v _ResetPPBuffers ResetPPBuffers `(v  1 e 1 0 ]
+"762
+[v _InitializeUSB InitializeUSB `(v  1 e 1 0 ]
+"774
+[v _EnableUSBModule EnableUSBModule `(v  1 e 1 0 ]
+"798
+[v _UnSuspend UnSuspend `(v  1 e 1 0 ]
+"807
+[v _StartOfFrame StartOfFrame `(v  1 e 1 0 ]
+"814
+[v _Stall Stall `(v  1 e 1 0 ]
+"826
+[v _Suspend Suspend `(v  1 e 1 0 ]
+"833
+[v _BusReset BusReset `(v  1 e 1 0 ]
+"860
+[v _ProcessUSBTransactions ProcessUSBTransactions `(v  1 e 1 0 ]
+[s S73 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1455.h
+[s S82 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S87 . 1 `S73 1 . 1 0 `S82 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES87  1 e 1 @11 ]
+[s S126 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"444
+[u S133 . 1 `S126 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES133  1 e 1 @12 ]
+[s S630 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+]
+"489
+[u S637 . 1 `S630 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES637  1 e 1 @14 ]
+[s S40 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ACTIF 1 0 :1:1 
+`uc 1 USBIF 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 C1IF 1 0 :1:5 
+`uc 1 C2IF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"598
+[u S49 . 1 `S40 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES49  1 e 1 @18 ]
+[s S596 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"965
+[u S600 . 1 `S596 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES600  1 e 1 @140 ]
+[s S565 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+]
+"995
+[u S572 . 1 `S565 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES572  1 e 1 @142 ]
+[s S105 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ACTIE 1 0 :1:1 
+`uc 1 USBIE 1 0 :1:2 
+`uc 1 BCL1IE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 C1IE 1 0 :1:5 
+`uc 1 C2IE 1 0 :1:6 
+`uc 1 OSFIE 1 0 :1:7 
+]
+"1104
+[u S114 . 1 `S105 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES114  1 e 1 @146 ]
+"1139
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+"1338
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1402
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1791
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S607 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"1806
+[u S614 . 1 `S607 1 . 1 0 ]
+[v _LATCbits LATCbits `VES614  1 e 1 @270 ]
+"2387
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+[s S582 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 ANSA4 1 0 :1:4 
+]
+"2401
+[s S585 . 1 `uc 1 ANSELA 1 0 :6:0 
+]
+[u S587 . 1 `S582 1 . 1 0 `S585 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES587  1 e 1 @396 ]
+"2416
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+[s S547 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+]
+"2432
+[s S552 . 1 `uc 1 ANSELC 1 0 :8:0 
+]
+[u S554 . 1 `S547 1 . 1 0 `S552 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES554  1 e 1 @398 ]
+"3928
+[v _ACTCON ACTCON `VEuc  1 e 1 @923 ]
+"4631
+[v _UCON UCON `VEuc  1 e 1 @3726 ]
+[s S153 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"4647
+[u S161 . 1 `S153 1 . 1 0 ]
+[v _UCONbits UCONbits `VES161  1 e 1 @3726 ]
+"4682
+[v _USTAT USTAT `VEuc  1 e 1 @3727 ]
+"4742
+[v _UIR UIR `VEuc  1 e 1 @3728 ]
+[s S354 . 1 `uc 1 URSTIF 1 0 :1:0 
+`uc 1 UERRIF 1 0 :1:1 
+`uc 1 ACTVIF 1 0 :1:2 
+`uc 1 TRNIF 1 0 :1:3 
+`uc 1 IDLEIF 1 0 :1:4 
+`uc 1 STALLIF 1 0 :1:5 
+`uc 1 SOFIF 1 0 :1:6 
+]
+"4758
+[u S362 . 1 `S354 1 . 1 0 ]
+[v _UIRbits UIRbits `VES362  1 e 1 @3728 ]
+"4798
+[v _UCFG UCFG `VEuc  1 e 1 @3729 ]
+"4852
+[v _UIE UIE `VEuc  1 e 1 @3730 ]
+[s S335 . 1 `uc 1 URSTIE 1 0 :1:0 
+`uc 1 UERRIE 1 0 :1:1 
+`uc 1 ACTVIE 1 0 :1:2 
+`uc 1 TRNIE 1 0 :1:3 
+`uc 1 IDLEIE 1 0 :1:4 
+`uc 1 STALLIE 1 0 :1:5 
+`uc 1 SOFIE 1 0 :1:6 
+]
+"4868
+[u S343 . 1 `S335 1 . 1 0 ]
+[v _UIEbits UIEbits `VES343  1 e 1 @3730 ]
+"4908
+[v _UEIR UEIR `VEuc  1 e 1 @3731 ]
+"5060
+[v _UADDR UADDR `VEuc  1 e 1 @3734 ]
+"5116
+[v _UEIE UEIE `VEuc  1 e 1 @3735 ]
+"5167
+[v _UEP0 UEP0 `VEuc  1 e 1 @3736 ]
+[s S373 . 1 `uc 1 EPSTALL 1 0 :1:0 
+`uc 1 EPINEN 1 0 :1:1 
+`uc 1 EPOUTEN 1 0 :1:2 
+`uc 1 EPCONDIS 1 0 :1:3 
+`uc 1 EPHSHK 1 0 :1:4 
+]
+"5181
+[u S379 . 1 `S373 1 . 1 0 ]
+[v _UEP0bits UEP0bits `VES379  1 e 1 @3736 ]
+"42 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Main.c
+[v _last_gamepad_reading last_gamepad_reading `uc  1 e 1 0 ]
+"153 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Usb.c
+[v _RemoteWakeup RemoteWakeup `uc  1 e 1 0 ]
+"154
+[v _DeviceAddress DeviceAddress `uc  1 e 1 0 ]
+"155
+[v _SelfPowered SelfPowered `uc  1 e 1 0 ]
+"156
+[v _CtrlTransferStage CtrlTransferStage `uc  1 e 1 0 ]
+"157
+[v _CurrentConfiguration CurrentConfiguration `uc  1 e 1 0 ]
+"158
+[v _HIDPostProcess HIDPostProcess `uc  1 e 1 0 ]
+"159
+[v _RequestHandled RequestHandled `uc  1 e 1 0 ]
+"161
+[v _HidIdleRate HidIdleRate `uc  1 e 1 0 ]
+"162
+[v _HidProtocol HidProtocol `uc  1 e 1 0 ]
+"163
+[v _HidRxLen HidRxLen `uc  1 e 1 0 ]
+"165
+[v _ROMoutPtr ROMoutPtr `*.25DCuc  1 e 2 0 ]
+"166
+[v _outPtr outPtr `*.4uc  1 e 1 0 ]
+"167
+[v _inPtr inPtr `*.4uc  1 e 1 0 ]
+"168
+[v _transferType transferType `uc  1 e 1 0 ]
+"169
+[v _wCount wCount `us  1 e 2 0 ]
+[s S301 _setupPacketStruct 9 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `uc 1 wValue0 1 2 `uc 1 wValue1 1 3 `uc 1 wIndex0 1 4 `uc 1 wIndex1 1 5 `us 1 wLength 2 6 `[1]uc 1 extra 1 8 ]
+"171
+[v _SetupPacket SetupPacket `VES301  1 e 9 0 ]
+"172
+[v _ControlTransferBuffer ControlTransferBuffer `VE[8]uc  1 e 8 0 ]
+"174
+[v _EndpointFlags EndpointFlags `VE[1]uc  1 e 1 @3737 ]
+[s S310 _BDT 4 `uc 1 Stat 1 0 `uc 1 Cnt 1 1 `us 1 ADDR 2 2 ]
+"179
+[s S314 _Interface 8 `S310 1 Output 4 0 `S310 1 Input 4 4 ]
+[v _Interfaces Interfaces `VE[2]S314  1 e 16 @32 ]
+"66 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Usb.h
+[v _DeviceState DeviceState `uc  1 e 1 0 ]
+"39 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/UsbDescriptors.h
+[v _HIDRxBuffer HIDRxBuffer `VE[3]uc  1 e 3 0 ]
+"40
+[v _HIDTxBuffer HIDTxBuffer `VE[3]uc  1 e 3 0 ]
+[s S22 _BufferInfo 2 `uc 1 Size 1 0 `*.4uc 1 Buffer 1 1 ]
+"42
+[v _Buffers Buffers `[2]S22  1 e 4 0 ]
+"53
+[v _DeviceDescriptor DeviceDescriptor `DC[18]uc  1 e 18 0 ]
+[s S25 _configStruct 34 `[9]uc 1 configHeader 9 0 `[25]uc 1 HIDDescriptor 25 9 ]
+"84
+[v _ConfigurationDescriptor ConfigurationDescriptor `DCS25  1 e 34 0 ]
+"134
+[v _HIDReport HIDReport `DC[42]uc  1 e 42 0 ]
+[s S28 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]us 1 string 2 2 ]
+"160
+[v _StringDescriptor0 StringDescriptor0 `DCS28  1 e 4 0 ]
+[s S32 . 28 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[13]us 1 string 26 2 ]
+"162
+[v _StringDescriptor1 StringDescriptor1 `DCS32  1 e 28 0 ]
+[s S36 . 16 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[7]us 1 string 14 2 ]
+"165
+[v _StringDescriptor2 StringDescriptor2 `DCS36  1 e 16 0 ]
+"169
+[v _StringDescriptorPointers StringDescriptorPointers `DC[3]*.25DCuc  1 e 6 0 ]
+"146 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"155
+} 0
+"129
+[v _ProcessIO ProcessIO `(v  1 e 1 0 ]
+{
+"135
+[v ProcessIO@reading reading `uc  1 a 1 6 ]
+"144
+} 0
+"69
+[v _PrepareTxBuffer PrepareTxBuffer `(v  1 e 1 0 ]
+{
+[v PrepareTxBuffer@gamepad_reading gamepad_reading `uc  1 a 1 wreg ]
+"84
+[v PrepareTxBuffer@y y `c  1 a 1 2 ]
+"83
+[v PrepareTxBuffer@x x `c  1 a 1 1 ]
+"71
+[v PrepareTxBuffer@n n `uc  1 a 1 3 ]
+"69
+[v PrepareTxBuffer@gamepad_reading gamepad_reading `uc  1 a 1 wreg ]
+"74
+[v PrepareTxBuffer@gamepad_reading gamepad_reading `uc  1 a 1 4 ]
+"112
+} 0
+"52 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/nes_gamepad.c
+[v _NES_read_pad NES_read_pad `(uc  1 e 1 0 ]
+{
+"80
+[v NES_read_pad@i i `i  1 a 2 3 ]
+"79
+[v NES_read_pad@output output `uc  1 a 1 2 ]
+"91
+} 0
+"216 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Usb.c
+[v _HIDSend HIDSend `(v  1 e 1 0 ]
+{
+[v HIDSend@InterfaceNo InterfaceNo `uc  1 a 1 wreg ]
+[v HIDSend@InterfaceNo InterfaceNo `uc  1 a 1 wreg ]
+"219
+[v HIDSend@InterfaceNo InterfaceNo `uc  1 a 1 3 ]
+"229
+} 0
+"120 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Main.c
+[v _CheckUsb CheckUsb `(v  1 s 1 CheckUsb ]
+{
+"127
+} 0
+"196 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Usb.c
+[v _ReArmInterface ReArmInterface `(v  1 e 1 0 ]
+{
+[v ReArmInterface@InterfaceNo InterfaceNo `uc  1 a 1 wreg ]
+[v ReArmInterface@InterfaceNo InterfaceNo `uc  1 a 1 wreg ]
+"202
+[v ReArmInterface@InterfaceNo InterfaceNo `uc  1 a 1 3 ]
+"214
+} 0
+"114 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Main.c
+[v _ProcessIncomingData ProcessIncomingData `(v  1 e 1 0 ]
+{
+"118
+} 0
+"186 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Usb.c
+[v _IsUsbDataAvaialble IsUsbDataAvaialble `(uc  1 e 1 0 ]
+{
+[v IsUsbDataAvaialble@InterfaceNo InterfaceNo `uc  1 a 1 wreg ]
+[v IsUsbDataAvaialble@InterfaceNo InterfaceNo `uc  1 a 1 wreg ]
+"188
+[v IsUsbDataAvaialble@InterfaceNo InterfaceNo `uc  1 a 1 1 ]
+"194
+} 0
+"41 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/nes_gamepad.c
+[v _NES_GPIO_Initialize NES_GPIO_Initialize `(v  1 e 1 0 ]
+{
+"50
+} 0
+"762 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Usb.c
+[v _InitializeUSB InitializeUSB `(v  1 e 1 0 ]
+{
+"772
+} 0
+"753
+[v _ResetPPBuffers ResetPPBuffers `(v  1 e 1 0 ]
+{
+"760
+} 0
+"50 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Main.c
+[v _InitializeSystem InitializeSystem `(v  1 s 1 InitializeSystem ]
+{
+"59
+} 0
+"774 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Usb.c
+[v _EnableUSBModule EnableUSBModule `(v  1 e 1 0 ]
+{
+"795
+} 0
+"61 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Main.c
+[v _EnableInterrupts EnableInterrupts `(v  1 s 1 EnableInterrupts ]
+{
+"67
+} 0
+"45
+[v _ISRCode ISRCode `II(v  1 e 1 0 ]
+{
+"48
+} 0
+"860 G:\My Drive\DEV\PIC\NES2USB\NES2USB.X\Source/Usb.c
+[v _ProcessUSBTransactions ProcessUSBTransactions `(v  1 e 1 0 ]
+{
+"936
+} 0
+"798
+[v _UnSuspend UnSuspend `(v  1 e 1 0 ]
+{
+"803
+} 0
+"826
+[v _Suspend Suspend `(v  1 e 1 0 ]
+{
+"831
+} 0
+"807
+[v _StartOfFrame StartOfFrame `(v  1 e 1 0 ]
+{
+"811
+} 0
+"814
+[v _Stall Stall `(v  1 e 1 0 ]
+{
+"823
+} 0
+"693
+[v _ProcessControlTransfer ProcessControlTransfer `(v  1 e 1 0 ]
+{
+"698
+[v ProcessControlTransfer@PID PID `uc  1 a 1 11 ]
+"751
+} 0
+"612
+[v _SetupStage SetupStage `(v  1 e 1 0 ]
+{
+"676
+} 0
+"475
+[v _ProcessStandardRequest ProcessStandardRequest `(v  1 e 1 0 ]
+{
+"477
+[v ProcessStandardRequest@request request `uc  1 a 1 7 ]
+"560
+} 0
+"429
+[v _SetFeature SetFeature `(v  1 s 1 SetFeature ]
+{
+"451
+[v SetFeature@endpointDir endpointDir `uc  1 a 1 5 ]
+"450
+[v SetFeature@endpointNum endpointNum `uc  1 a 1 4 ]
+"432
+[v SetFeature@feature feature `uc  1 a 1 3 ]
+"431
+[v SetFeature@recipient recipient `uc  1 a 1 2 ]
+"473
+} 0
+"233
+[v _HIDInitEndpoints HIDInitEndpoints `(v  1 e 1 0 ]
+{
+"235
+[v HIDInitEndpoints@i i `uc  1 a 1 4 ]
+"255
+} 0
+"382
+[v _GetStatus GetStatus `(v  1 s 1 GetStatus ]
+{
+"409
+[v GetStatus@endpointDir endpointDir `uc  1 a 1 3 ]
+"408
+[v GetStatus@endpointNum endpointNum `uc  1 a 1 2 ]
+"385
+[v GetStatus@recipient recipient `uc  1 a 1 4 ]
+"426
+} 0
+"343
+[v _GetDescriptor GetDescriptor `(v  1 s 1 GetDescriptor ]
+{
+"347
+[v GetDescriptor@descriptorType descriptorType `uc  1 a 1 4 ]
+"348
+[v GetDescriptor@descriptorIndex descriptorIndex `uc  1 a 1 3 ]
+"379
+} 0
+"258
+[v _ProcessHIDRequest ProcessHIDRequest `(v  1 e 1 0 ]
+{
+"270
+[v ProcessHIDRequest@descriptorType descriptorType `uc  1 a 1 1 ]
+"260
+[v ProcessHIDRequest@bRequest bRequest `uc  1 a 1 2 ]
+"340
+} 0
+"563
+[v _InDataStage InDataStage `(v  1 e 1 0 ]
+{
+"566
+[v InDataStage@bufferSize bufferSize `us  1 a 2 3 ]
+"565
+[v InDataStage@i i `uc  1 a 1 2 ]
+"589
+} 0
+"592
+[v _OutDataStage OutDataStage `(v  1 e 1 0 ]
+{
+"594
+[v OutDataStage@bufferSize bufferSize `us  1 a 2 3 ]
+[v OutDataStage@i i `us  1 a 2 1 ]
+"607
+} 0
+"833
+[v _BusReset BusReset `(v  1 e 1 0 ]
+{
+"857
+} 0
+"680
+[v _WaitForSetupStage WaitForSetupStage `(v  1 e 1 0 ]
+{
+"687
+} 0
